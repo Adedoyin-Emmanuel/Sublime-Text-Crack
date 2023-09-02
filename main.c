@@ -93,7 +93,7 @@ void patch_sublime()
 
     system("mv sublime_text /opt/sublime_text/sublime_text");
     msg_menu();
-    printf("\x1B[1;34mSublime Text Patched Successfully\n You Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
+    printf("\x1B[1;32mSublime Text Patched Successfully\nYou Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
     system("sleep 5");
     system("clear; exit");
 }
@@ -125,7 +125,7 @@ void patch_sublimeDEV()
 
     system("mv sublime_text /opt/sublime_text/sublime_text ");
     msg_menu();
-    printf("\x1B[1;32mSublime Text Patched Successfully\n You Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
+    printf("\x1B[1;32mSublime Text Patched Successfully\nYou Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
     system("sleep 5");
     system("clear; exit");
 }
@@ -160,7 +160,7 @@ void patch_merge()
 
     system("mv sublime_merge /opt/sublime_merge/sublime_merge ");
     msg_menu();
-    printf("\x1B[1;32mSublime Merge Patched Successfully\n You Can Use Your Sublime Merge Without Restrictions\x1B[0m\n");
+    printf("\x1B[1;32mSublime Merge Patched Successfully\nYou Can Use Your Sublime Merge Without Restrictions\x1B[0m\n");
     system("sleep 5");
     system("clear; exit");
 }
