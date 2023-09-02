@@ -1,6 +1,6 @@
 # Sublime Text Cracker 🚀
 
-This is a simple tool that helps users crack their sublime text application. Yes, this would allow the application to accept any kind of registeration key after using this tool. Sounds cool 🧢
+This is a simple tool that helps users crack their sublime text application. Yes, this would allow the application to accept any kind of registration key after using this tool. Sounds cool 🧢
 
 ## Installation ⚙️
 
@@ -57,6 +57,20 @@ sudo ./main
 
 ```
 
+![First Image]("./../screenshots/img-2.png)
 
+![Second Image]("./../screenshots/img-1.png)
 
+![Third Image]("./../screenshots/img-3.png)
 
+# Open Sublime Text 😋
+
+![Fourth Image]("./../screenshots/img-6.png)
+
+Enter any text as the license text
+
+![Fifth Image]("./../screenshots/img-7.png)
+![Sixth Image]("./../screenshots/img-8.png)
+![Seventh Image]("./../screenshots/img-9.png)
+
+# Enjoy The Cracked Sublime Text 🚀
