@@ -1,15 +1,13 @@
+/*
+    Sublime Text Cracker
+
+    Modified by Adedoyin Emmanuel
+    Built by Código Cristo
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
-
-void msg_welcome();
-void pause();
-void clean();
-void msg_menu();
-void msg_end();
-void patch_sublime();
-void patch_sublimeDEV();
-void patch_merge();
+#include "main.h"
 
 int main()
 {
@@ -45,7 +43,7 @@ int main()
 
     default:
         clean();
-        printf("\nError! operator is not correct %c", 174);
+        printf("\x1b[%dm%s\x1b[0m\n", 31, "Error! operator is not correct \n");
     }
 
     return 0;
@@ -91,26 +89,9 @@ void patch_sublime()
     fputs("\xC3", crack);
     fclose(crack);
 
-    system("mv sublime_text /opt/sublime_text/sublime_text ");
-
-    system("clear");
+    system("mv sublime_text /opt/sublime_text/sublime_text");
     msg_menu();
-    printf("\n");
-    printf("\tSublime Text for Linux x64 platform, loading...\n");
-    system("echo '\nPress enter to continue...' &&  read line");
-
-    system("clear");
-    msg_menu();
-    printf("\n");
-    printf("\tPaying $99 USD For A License Is Stupid.\n");
-    system("echo '\nPress enter to continue...' &&  read line");
-
-    system("clear");
-    msg_menu();
-    printf("\n");
-    printf("\tEnter any key to program, program made by Codigo Cristo\n");
-    msg_end();
-    system("echo '\nPress enter to continue...' &&  read line");
+    printf("\x1B[1;34mSublime Text Patched Successfully\n You Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
     system("clear; exit");
 }
 
@@ -140,25 +121,8 @@ void patch_sublimeDEV()
     fclose(crack);
 
     system("mv sublime_text /opt/sublime_text/sublime_text ");
-
-    system("clear");
     msg_menu();
-    printf("\n");
-    printf("\tSublime Text for Linux x64 platform, loading...\n");
-    system("echo '\nPress enter to continue...' &&  read line");
-
-    system("clear");
-    msg_menu();
-    printf("\n");
-    printf("\tPaying $99 USD For A License Is Stupid.\n");
-    system("echo '\nPress enter to continue...' &&  read line");
-
-    system("clear");
-    msg_menu();
-    printf("\n");
-    printf("\tEnter any key to program, program made by Codigo Cristo\n");
-    msg_end();
-    system("echo '\nPress enter to continue...' &&  read line");
+    printf("\x1B[1;34mSublime Text Patched Successfully\n You Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
     system("clear; exit");
 }
 
@@ -191,26 +155,9 @@ void patch_merge()
     fclose(crack);
 
     system("mv sublime_merge /opt/sublime_merge/sublime_merge ");
-
-    system("clear");
     msg_menu();
-    printf("\n");
-    printf("\tSublime Merge for Linux x64 platform, loading...\n");
-    system("sleep 5");
-
-    system("clear");
-    msg_menu();
-    printf("\n");
-    printf("\tPaying $99 USD For A License Is Stupid.\n");
-    system("sleep 5");
-
-    system("clear");
-    msg_menu();
-    printf("\n");
-    printf("\tEnter any key to program, program made by Codigo Cristo\n");
-    msg_end();
-    system("echo 'Press enter to continue...' &&  read line");
-    system("exit");
+    printf("\x1B[1;34mSublime Merge Patched Successfully\n You Can Use Your Sublime Merge Without Restrictions\x1B[0m\n");
+    system("clear; exit");
 }
 
 void msg_menu()
@@ -239,9 +186,10 @@ void msg_welcome()
                                                                \n");
 
     printf("\n\tFor Sublime Text and Sublime merge \n");
-    printf("\nThanks to the community for providing cracking methods,\n Written in by Código Cristo\n Modified by Adedoyin Emmanuel\n");
+    printf("\nThanks to the community for providing cracking methods,\n Modifications by Adedoyin Emmanuel\n Built by Código Cristo");
 }
 
 void msg_end()
 {
+    printf("\n");
 }
