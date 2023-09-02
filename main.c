@@ -1,5 +1,3 @@
-// CRACK PARA SUBLIME TEXT 4
-// Create for Codigo Cristo
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -164,7 +162,6 @@ void patch_sublimeDEV()
     system("clear; exit");
 }
 
-
 void patch_merge()
 {
 
@@ -177,7 +174,7 @@ void patch_merge()
     char b5[] = "\xC3";
 
     FILE *crack = fopen("sublime_merge", "r+b");
-    fseek(crack, 0x00682CF3, SEEK_SET); // Se mueve a la dirección o numero espacios desde el comienzo del archivo
+    fseek(crack, 0x00682CF3, SEEK_SET);
     fwrite(b1, sizeof(b1[0]), 4, crack);
 
     fseek(crack, 0x004E48C7, SEEK_SET);
@@ -216,8 +213,6 @@ void patch_merge()
     system("exit");
 }
 
-////////////////////////////////////////////////////
-
 void msg_menu()
 {
     printf(" \n \
@@ -244,8 +239,7 @@ void msg_welcome()
                                                                \n");
 
     printf("\n\tFor Sublime Text and Sublime merge \n");
-    printf("\nThanks to the community for providing cracking methods,\nWritten in C by Código Cristo And Adedoyin Emmanuel\n");
-
+    printf("\nThanks to the community for providing cracking methods,\n Written in by Código Cristo\n Modified by Adedoyin Emmanuel\n");
 }
 
 void msg_end()
