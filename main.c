@@ -21,10 +21,12 @@ int main()
     int optionsublime = 0;
     int optionmerge = 0;
 
-    printf("\t1. Sublime Text Linux Build 4152 (Stable)\n");
+    printf("\033[1;97m\t1. Sublime Text Linux Build 4152 (Stable)\n");
     printf("\t2. Sublime Text Linux Build 4154 (Dev Channel)\n");
     printf("\t3. Sublime Merge Stable 2090\n");
     printf("\nEnter the number (1 - 2 - 3) : ");
+    printf("\033[0m");
+
     scanf("%i", &option);
 
     switch (option)
@@ -92,6 +94,7 @@ void patch_sublime()
     system("mv sublime_text /opt/sublime_text/sublime_text");
     msg_menu();
     printf("\x1B[1;34mSublime Text Patched Successfully\n You Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
+    system("sleep 5");
     system("clear; exit");
 }
 
@@ -122,7 +125,8 @@ void patch_sublimeDEV()
 
     system("mv sublime_text /opt/sublime_text/sublime_text ");
     msg_menu();
-    printf("\x1B[1;34mSublime Text Patched Successfully\n You Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
+    printf("\x1B[1;32mSublime Text Patched Successfully\n You Can Use Your Sublime Text Without Restrictions\x1B[0m\n");
+    system("sleep 5");
     system("clear; exit");
 }
 
@@ -156,25 +160,26 @@ void patch_merge()
 
     system("mv sublime_merge /opt/sublime_merge/sublime_merge ");
     msg_menu();
-    printf("\x1B[1;34mSublime Merge Patched Successfully\n You Can Use Your Sublime Merge Without Restrictions\x1B[0m\n");
+    printf("\x1B[1;32mSublime Merge Patched Successfully\n You Can Use Your Sublime Merge Without Restrictions\x1B[0m\n");
+    system("sleep 5");
     system("clear; exit");
 }
 
 void msg_menu()
 {
-    printf(" \n \
+    printf("\x1B[1;33m\n \
   ____        _     _ _                                      _     \n \
  / ___| _   _| |__ | (_)_ __ ___   ___    ___ _ __ __ _  ___| | __ \n \
  \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\  / __| '__/ _` |/ __| |/ / \n \
   ___) | |_| | |_) | | | | | | | |  __/ | (__| | | (_| | (__|   <  \n \
  |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|  \\___|_|  \\__,_|\\___|_|\\_\\ \n \
-                                                                  \n");
+                                                                  \x1B[0m\n");
 }
 
 void msg_welcome()
 {
 
-    printf(" \n \
+    printf("\x1B[1;33m\n \
  _______           ______   _       _________ _______  _______  \n \
 (  ____ \\|\\     /|(  ___ \\ ( \\      \\__   __/(       )(  ____ \\ \n \
 | (    \\/| )   ( || (   ) )| (         ) (   | () () || (    \\/ \n \
@@ -183,13 +188,16 @@ void msg_welcome()
       ) || |   | || (  \\ \\ | |         | |   | |   | || (       \n \
 /\\____) || (___) || )___) )| (____/\\___) (___| )   ( || (____/\\ \n \
 \\_______)(_______)|/ \\___/ (_______/\\_______/|/     \\|(_______/ \n \
-                                                               \n");
+                                                               \x1B[0m\n");
 
-    printf("\n\tFor Sublime Text and Sublime merge \n");
-    printf("\nThanks to the community for providing cracking methods,\n Modifications by Adedoyin Emmanuel\n Built by Código Cristo");
+    printf("\033[1;97m\tFor Sublime Text and Sublime Merge\n");
+    printf("\033[0m");
+
+    printf("\nThanks to the community for providing cracking methods,\nModifications by Adedoyin Emmanuel\n");
+    printf("Built by Código Cristo\n");
 }
 
 void msg_end()
-{ 
+{
     printf("\n");
 }
