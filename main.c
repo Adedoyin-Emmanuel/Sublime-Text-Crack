@@ -190,6 +190,6 @@ void msg_welcome()
 }
 
 void msg_end()
-{
+{ 
     printf("\n");
 }
