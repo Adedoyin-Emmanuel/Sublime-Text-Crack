@@ -2,6 +2,8 @@
 
 This is a simple tool that helps users crack their sublime text application. Yes, this would allow the application to accept any kind of registration key after using this tool. Sounds cool 🧢
 
+inspired by [Código Cristo](https://github.com/CodigoCristo/sublimepatch)
+
 ## Installation ⚙️
 
 I must mention that this tool is only available for Linux users. Also if you installed your **Sublime Text** with **Snap** it wouldn't work 😔 why? Well apparently in span directory is read-only and cannot be tampered with. So you have to install the **Sublime Text Debian Package** using apt or manually downloading the **.deb** package here [Download Sublime Text](https://ftp5.gwdg.de/pub/linux/debian/mint/packages/pool/import/s/sublime-text/)
